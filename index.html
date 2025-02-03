@@ -10,11 +10,11 @@
   <style>
     @font-face {
       font-family: 'jeju gothic';
-      src: url('font/제주고딕\(맥\).otf');
+      src: url('/font/제주고딕\(맥\).otf');
     }
     @font-face {
       font-family: 'jeju halla';
-      src: url('font/제주한라산\(맥\).otf');
+      src: url('/font/제주한라산\(맥\).otf');
     }
     body {
       font-family: 'jeju gothic';
@@ -43,18 +43,18 @@
       color: #097dca !important;
     }
     .bg-1 {
-      background-color: #0d72d1; /* Green */
+      background-color: #0d72d1; 
       color: #ffffff;
     }
     .bg-1 img {
       width: 200px;
     }
     .bg-2 {
-      background-color: #474e5d; /* Dark Blue */
+      background-color: #474e5d; 
       color: #ffffff;
     }
     .bg-3 {
-      background-color: #ffffff; /* White */
+      background-color: #ffffff; 
       color: #555555;
     }
     .container-fluid {
@@ -79,9 +79,6 @@
       border: 5px solid transparent;
       width: 80%;
       height: 80%;
-    }
-    .img-responsive:hover {
-      border-color: #242424f1;
     }
     #portfolio .container-fluid {
       padding-top: 0px; 
@@ -115,11 +112,15 @@
       </div>
     </div>
   </nav>
+  <!-- 프로필 -------------------->
   <div class="container-fluid bg-1 text-center">
     <h3 class="margin">김승훈의 Portfolio</h3>
     <img src="img/portfolioimg.webp" class="img-circle" alt="Bird">
     <h3>발전하는 개발자 김승훈의 포트폴리오 입니다.</h3>
   </div>
+  <!-- /프로필 -->
+
+  <!-- 자기소개 -------------------------------------->
   <div id="about" class="container-fluid bg-2 text-center">
     <h3 class="margin">저를 소개합니다.</h3>
     <pre><i class="glyphicon glyphicon-pencil"></i> HTML, CSS, JavaScript, JQuery, Bootstrap, ReactJs 
@@ -127,25 +128,24 @@
     <pre>기본부터 차근차근 성실히 배우고 있습니다.</pre>
     <a href="https://github.com/SeungHun333" class="btn btn-default" target="_blank">my Github</a>
   </div>
+  <!-- /자기소개 -->
+
+  <!-- 포트폴리오 목록 -------------------------->
   <div id="portfolio" class="container-fluid bg-3 text-center">
     <div class="container-fluid bg-3 text-center">
       <h3 class="margin">Portfolio</h3>
       <div class="row">
         <div class="col-sm-3">
           <p>쿠팡이츠 데모</p>
-          <a href="https://seunghun333.github.io/coupangEats/index.html" target="_blank"><img src="img/coupangEatsThumbnail.png" class="img-responsive" style="width:100%" alt="Image"></a>
-        <div><br>
-          html, css, hootstrap, 반응형 웹
-        </div><br>
+          <a href="https://seunghun333.github.io/coupangEats/" target="_blank"><img src="img/coupangEatsThumbnail.png" class="img-responsive" style="width:100%" alt="Image"></a><br>
         <!-- 모달 -------------------------------------->
-          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">more</button>
-
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">구현 내용 & 트러블 슈팅</button>
           <div id="myModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Modal Header</h4>
+                  <h4 class="modal-title">구현 내용 & 트러블 슈팅</h4>
                 </div>
                 <div class="modal-body">
                   <p>html5, css3를 기반으로 bootstrap을 사용하여 responsive web을 개발했습니다.</p>
@@ -153,7 +153,7 @@
                     bootstrap을 사용하여 빠르게 개발할 수 있었고, media query사용법이 중요하다는 것을 배웠습니다.
                 </div>
                 <div class="modal-footer">
-                  <a href="https://seunghun333.github.io/coupangEats/index.html" target="_blank">view</button>
+                  <a href="https://seunghun333.github.io/coupangEats/" target="_blank">view</button>
                 </div>
               </div>
             </div>
@@ -162,27 +162,92 @@
         </div>
         <div class="col-sm-3">
           <p>Dior 데모</p>
-          <a href="https://seunghun333.github.io/dior/index.html" target="_blank"><img src="img/diorThumbnail.png" class="img-responsive" style="width:100%" alt="Image"></a>
-          <div><br>
-            html, css, transition, 동영상 배경
+          <a href="https://seunghun333.github.io/dior/" target="_blank"><img src="img/diorThumbnail.png" class="img-responsive" style="width:100%" alt="Image"></a><br>
+        <!-- 모달 -------------------------------------->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">구현 내용 & 트러블 슈팅</button>
+          <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">구현 내용 & 트러블 슈팅</h4>
+                </div>
+                <div class="modal-body">
+                  <p>html5, css3를 기반으로 bootstrap을 사용하여 responsive web을 개발했습니다.</p>
+                    <br>
+                    bootstrap을 사용하여 빠르게 개발할 수 있었고, media query사용법이 중요하다는 것을 배웠습니다.
+                </div>
+                <div class="modal-footer">
+                  <a href="https://seunghun333.github.io/coupangEats/" target="_blank">view</button>
+                </div>
+              </div>
+            </div>
           </div>
+        <!-- /모달 -------------------------------------->
         </div>
         <div class="col-sm-3">
           <p>mini project2</p>
-          <a href="#"><img src="img/birds3.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+          <a href="#"><img src="img/birds3.jpg" class="img-responsive" style="width:100%" alt="Image"></a><br>
+          <!-- 모달 -------------------------------------->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">구현 내용 & 트러블 슈팅</button>
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">구현 내용 & 트러블 슈팅</h4>
+              </div>
+              <div class="modal-body">
+                <p>html5, css3를 기반으로 bootstrap을 사용하여 responsive web을 개발했습니다.</p>
+                  <br>
+                  bootstrap을 사용하여 빠르게 개발할 수 있었고, media query사용법이 중요하다는 것을 배웠습니다.
+              </div>
+              <div class="modal-footer">
+                <a href="https://seunghun333.github.io/coupangEats/" target="_blank">view</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- /모달 -------------------------------------->
         </div>
         <div class="col-sm-3">
           <p>final project</p>
-          <a href="#"><img src="img/birds1.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+          <a href="#"><img src="img/birds1.jpg" class="img-responsive" style="width:100%" alt="Image"></a><br>
+            <!-- 모달 -------------------------------------->
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">구현 내용 & 트러블 슈팅</button>
+          <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">구현 내용 & 트러블 슈팅</h4>
+                </div>
+                <div class="modal-body">
+                  <p>html5, css3를 기반으로 bootstrap을 사용하여 responsive web을 개발했습니다.</p>
+                    <br>
+                    bootstrap을 사용하여 빠르게 개발할 수 있었고, media query사용법이 중요하다는 것을 배웠습니다.
+                </div>
+                <div class="modal-footer">
+                  <a href="https://seunghun333.github.io/coupangEats/" target="_blank">view</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- /모달 -------------------------------------->
         </div>
       </div>
     </div>    
   </div>
+  <!-- /포트폴리오 목록 -->
+
+ <!-- 연락처 ------------------------------>
   <div class="container-fluid bg-5 text-center">
     <h3 class="margin" id="contact" >연락처</h3>
     <p>카톡ID : abcd1234</p>
     <p>E-Mail : dvvda456@gmail.com</p>
   </div>
+  <!-- 연락처 -->
+   
   <footer class="container-fluid bg-4 text-center">
     &copy; All rights reserved by Kim seung hun
   </footer>
