@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    @font-face {
+      font-family: 'jeju gothic';
+      src: url('/font/제주고딕\(맥\).otf');
+    }
+    @font-face {
+      font-family: 'jeju halla';
+      src: url('/font/제주한라산\(맥\).otf');
+    }
+    body {
+      font-family: 'jeju gothic';
+    }
+    pre {
+      border: none;
+      background-color: #474e5d;
+      color: #ffffff;
+      text-align: center; 
+      font-size: 17px; 
+      font-family: "jeju gothic";
+    }
+    .margin {
+      margin-bottom: 45px;
+    }
+    .navbar { 
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+    }
+    .navbar li a:hover {
+      color: #097dca !important;
+    }
+    .bg-1 {
+      background-color: #0d72d1; /* Green */
+      color: #ffffff;
+    }
+    .bg-1 img {
+      width: 200px;
+    }
+    .bg-2 {
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+    }
+    .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+    }
+    .container-fluid {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .bg-4 {
+      background-color: #2f2f2f;
+      color: #ffffff;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .bg-5 {
+      background-color: #585858;
+      color: #ffffff;
+    }
+    .container-fluid h3 {
+      font-family: 'jeju halla';
+    }
+    .img-responsive {
+      border-radius: 10px;
+      border: 5px solid transparent;
+      width: 80%;
+      height: 80%;
+    }
+    .img-responsive:hover {
+      border-color: #242424f1;
+    }
+    #portfolio .container-fluid {
+      padding-top: 0px; 
+      padding-bottom: 0px; 
+    }
+    
+    @media screen and (max-width: 767px) {
+      #portfolio p {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">김승훈</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid bg-1 text-center">
+    <h3 class="margin">김승훈의 Portfolio</h3>
+    <img src="img/portfolioimg.webp" class="img-circle" alt="Bird">
+    <h3>발전하는 개발자 김승훈의 포트폴리오 입니다.</h3>
+  </div>
+  <div id="about" class="container-fluid bg-2 text-center">
+    <h3 class="margin">저를 소개합니다.</h3>
+    <pre><i class="glyphicon glyphicon-pencil"></i> HTML, CSS, JavaScript, JQuery, Bootstrap, ReactJs 
+  <i class="glyphicon glyphicon-cloud-upload"></i> SQL(Oracle, MySQL), Servlet/JSP, Spring, Spring Boot</pre>
+    <pre>기본부터 차근차근 성실히 배우고 있습니다.</pre>
+    <a href="https://github.com/SeungHun333" class="btn btn-default" target="_blank">my Github</a>
+  </div>
+  <div id="portfolio" class="container-fluid bg-3 text-center">
+    <div class="container-fluid bg-3 text-center">
+      <h3 class="margin">Portfolio</h3>
+      <div class="row">
+        <div class="col-sm-3">
+          <p>쿠팡이츠 데모</p>
+          <a href="https://seunghun333.github.io/coupangEats/index.html" target="_blank"><img src="img/coupangEatsThumbnail.png" class="img-responsive" style="width:100%" alt="Image"></a>
+        <div><br>
+          html, css, hootstrap, 반응형 웹
+        </div><br>
+        <!-- 모달 -------------------------------------->
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">more</button>
+
+          <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                  <p>html5, css3를 기반으로 bootstrap을 사용하여 responsive web을 개발했습니다.</p>
+                    <br>
+                    bootstrap을 사용하여 빠르게 개발할 수 있었고, media query사용법이 중요하다는 것을 배웠습니다.
+                </div>
+                <div class="modal-footer">
+                  <a href="https://seunghun333.github.io/coupangEats/index.html" target="_blank">view</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- /모달 -------------------------------------->
+        </div>
+        <div class="col-sm-3">
+          <p>Dior 데모</p>
+          <a href="https://seunghun333.github.io/dior/index.html" target="_blank"><img src="img/diorThumbnail.png" class="img-responsive" style="width:100%" alt="Image"></a>
+          <div><br>
+            html, css, transition, 동영상 배경
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <p>mini project2</p>
+          <a href="#"><img src="img/birds3.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+        </div>
+        <div class="col-sm-3">
+          <p>final project</p>
+          <a href="#"><img src="img/birds1.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+        </div>
+      </div>
+    </div>    
+  </div>
+  <div class="container-fluid bg-5 text-center">
+    <h3 class="margin" id="contact" >연락처</h3>
+    <p>카톡ID : abcd1234</p>
+    <p>E-Mail : dvvda456@gmail.com</p>
+  </div>
+  <footer class="container-fluid bg-4 text-center">
+    &copy; All rights reserved by Kim seung hun
+  </footer>
+</body>
+</html>
