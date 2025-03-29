@@ -7,17 +7,17 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Pretendard -->
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" rel="stylesheet" />
+  <!-- Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
   <style>
-    @font-face {
-      font-family: 'jeju gothic';
-      src: url('/font/제주고딕\(맥\).otf');
-    }
-    @font-face {
-      font-family: 'jeju halla';
-      src: url('/font/제주한라산\(맥\).otf');
-    }
     body {
-      font-family: 'jeju gothic';
+      font-family: 'Pretendard Variable', 'Inter', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    }
+    .navbar, .btn, .footer, p, li {
+      font-family: 'Pretendard Variable', 'Inter', sans-serif;
     }
     pre {
       border: none;
@@ -25,7 +25,6 @@
       color: #ffffff;
       text-align: center; 
       font-size: 17px; 
-      font-family: "jeju gothic";
     }
     .margin {
       margin-bottom: 45px;
@@ -49,6 +48,13 @@
     .bg-1 img {
       width: 200px;
     }
+    .bg-1 .margin {
+      margin-bottom: 50px;
+    }
+    .bg-1 h3 {
+      font-weight: 300;
+      margin-top: 50px;
+    }
     .bg-2 {
       background-color: #474e5d; 
       color: #ffffff;
@@ -71,9 +77,6 @@
       background-color: #585858;
       color: #ffffff;
     }
-    .container-fluid h3 {
-      font-family: 'jeju halla';
-    }
     .img-responsive {
       border-radius: 10px;
       border: 5px solid transparent;
@@ -83,6 +86,13 @@
     #portfolio .container-fluid {
       padding-top: 0px; 
       padding-bottom: 0px; 
+    }
+    #backPortfolio {
+      margin-top: 60px;
+      margin-bottom: 100px;
+    }
+    .row {
+      margin-top: 40px;
     }
     
     @media screen and (max-width: 767px) {
@@ -116,135 +126,80 @@
   <div class="container-fluid bg-1 text-center">
     <h3 class="margin">김승훈의 Portfolio</h3>
     <img src="img/portfolioimg.webp" class="img-circle" alt="Bird">
-    <h3>발전하는 개발자 김승훈의 포트폴리오 입니다.</h3>
+    <h3>끊임없이 성장하며 문제를 해결하는 개발자, 김승훈의 포트폴리오입니다.</h3>
   </div>
   <!-- /프로필 -->
 
   <!-- 자기소개 -------------------------------------->
   <div id="about" class="container-fluid bg-2 text-center">
     <h3 class="margin">저를 소개합니다.</h3>
-    <pre><i class="glyphicon glyphicon-pencil"></i> HTML, CSS, JavaScript, JQuery, Bootstrap, ReactJs 
+    <pre><i class="glyphicon glyphicon-pencil"></i> HTML, CSS, JavaScript, JQuery, Bootstrap 
   <i class="glyphicon glyphicon-cloud-upload"></i> SQL(Oracle, MySQL), Servlet/JSP, Spring, Spring Boot</pre>
-    <pre>기본부터 차근차근 성실히 배우고 있습니다.</pre>
-    <a href="https://github.com/SeungHun333" class="btn btn-default" target="_blank">my Github</a>
+    <pre>깊이 있는 개발 역량을 갖춘 백엔드 개발자를 목표로, 꾸준히 학습하고 성장하고 있습니다.</pre>
   </div>
   <!-- /자기소개 -->
 
   <!-- 포트폴리오 목록 -------------------------->
-  <div id="portfolio" class="container-fluid bg-3 text-center">
-    <div class="container-fluid bg-3 text-center">
-      <h3 class="margin">Portfolio</h3>
+<div id="portfolio" class="container-fluid bg-3 text-center">
+  <div class="container-fluid bg-3 text-center">
+    <h3 class="margin">Portfolio</h3>
+
+    <!-- 백엔드 프로젝트 -->
+    <div id="backPortfolio">
+      <h4><strong>🛠 백엔드 프로젝트</strong></h4>
       <div class="row">
-        <div class="col-sm-3">
-          <p>쿠팡이츠 데모</p>
-          <a href="https://seunghun333.github.io/coupangEats/" target="_blank"><img src="img/coupangEatsThumbnail.png" class="img-responsive" style="width:100%" alt="Image"></a><br>
-        <!-- 모달 -------------------------------------->
-          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">구현 내용 & 트러블 슈팅</button>
-          <div id="myModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">구현 내용 & 트러블 슈팅</h4>
-                </div>
-                <div class="modal-body">
-                  <p>html5, css3를 기반으로 bootstrap을 사용하여 responsive web을 개발했습니다.</p>
-                    <br>
-                    bootstrap을 사용하여 빠르게 개발할 수 있었고, media query사용법이 중요하다는 것을 배웠습니다.
-                </div>
-                <div class="modal-footer">
-                  <a href="https://seunghun333.github.io/coupangEats/" target="_blank">view</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        <!-- /모달 -------------------------------------->
+        <div class="col-sm-4 col-sm-offset-4">
+          <p>
+            ServletMVC<br>
+            <small>Servlet/JSP 기반 MVC 프로젝트, 회원 등록 기능 구현</small>
+          </p>
+          <a href="https://github.com/SeungHun333/ServletMVC" target="_blank">
+            <img src="img/servletMVCThumbnail.png" class="img-responsive center-block" style="max-width:280px;" alt="Image"></a><br>
+        </div>
+        <!-- <div class="col-sm-3">
+          <p>
+            main project<br>
+            <small>Spring Boot 기반 실무형 팀 프로젝트, JPA · 관리자 기능 포함</small>
+          </p>
+          <a href="#"><img src="img/birds1.jpg" class="img-responsive center-block" style="max-width:280px;" alt="Image"></a><br>
+        </div> -->
+      </div>
+    </div>
+    
+    <!-- 프론트엔드 프로젝트 -->
+    <div id="frontPortfolio">
+      <h4><strong>🎨 프론트엔드 프로젝트</strong></h4>
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-3">
+          <p>
+            쿠팡이츠 데모<br>
+            <small>Bootstrap 기반 반응형 웹 구현, 실제 서비스 UI 클론</small>
+          </p>
+          <a href="https://seunghun333.github.io/coupangEats/" target="_blank">
+            <img src="img/coupangEatsThumbnail.png" class="img-responsive center-block" style="max-width:280px;" alt="Image">
+          </a><br>
         </div>
         <div class="col-sm-3">
-          <p>Dior 데모</p>
-          <a href="https://seunghun333.github.io/dior/" target="_blank"><img src="img/diorThumbnail.png" class="img-responsive" style="width:100%" alt="Image"></a><br>
-        <!-- 모달 -------------------------------------->
-          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">구현 내용 & 트러블 슈팅</button>
-          <div id="myModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">구현 내용 & 트러블 슈팅</h4>
-                </div>
-                <div class="modal-body">
-                  <p>html5, css3를 기반으로 bootstrap을 사용하여 responsive web을 개발했습니다.</p>
-                    <br>
-                    bootstrap을 사용하여 빠르게 개발할 수 있었고, media query사용법이 중요하다는 것을 배웠습니다.
-                </div>
-                <div class="modal-footer">
-                  <a href="https://seunghun333.github.io/coupangEats/" target="_blank">view</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        <!-- /모달 -------------------------------------->
-        </div>
-        <div class="col-sm-3">
-          <p>mini project2</p>
-          <a href="#"><img src="img/birds3.jpg" class="img-responsive" style="width:100%" alt="Image"></a><br>
-          <!-- 모달 -------------------------------------->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">구현 내용 & 트러블 슈팅</button>
-        <div id="myModal" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">구현 내용 & 트러블 슈팅</h4>
-              </div>
-              <div class="modal-body">
-                <p>html5, css3를 기반으로 bootstrap을 사용하여 responsive web을 개발했습니다.</p>
-                  <br>
-                  bootstrap을 사용하여 빠르게 개발할 수 있었고, media query사용법이 중요하다는 것을 배웠습니다.
-              </div>
-              <div class="modal-footer">
-                <a href="https://seunghun333.github.io/coupangEats/" target="_blank">view</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      <!-- /모달 -------------------------------------->
-        </div>
-        <div class="col-sm-3">
-          <p>final project</p>
-          <a href="#"><img src="img/birds1.jpg" class="img-responsive" style="width:100%" alt="Image"></a><br>
-            <!-- 모달 -------------------------------------->
-          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">구현 내용 & 트러블 슈팅</button>
-          <div id="myModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">구현 내용 & 트러블 슈팅</h4>
-                </div>
-                <div class="modal-body">
-                  <p>html5, css3를 기반으로 bootstrap을 사용하여 responsive web을 개발했습니다.</p>
-                    <br>
-                    bootstrap을 사용하여 빠르게 개발할 수 있었고, media query사용법이 중요하다는 것을 배웠습니다.
-                </div>
-                <div class="modal-footer">
-                  <a href="https://seunghun333.github.io/coupangEats/" target="_blank">view</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        <!-- /모달 -------------------------------------->
+          <p>
+            Dior 데모 (Toss 미니 프로젝트)<br>
+            <small>HTML/CSS + JS로 구현한 쇼핑몰 UI, 슬라이더 및 애니메이션 포함</small>
+          </p>
+          <a href="https://seunghun333.github.io/miniProject_Toss/" target="_blank">
+            <img src="img/tossThumbnail.png" class="img-responsive center-block" style="max-width:280px;" alt="Image">
+          </a><br>
         </div>
       </div>
-    </div>    
-  </div>
-  <!-- /포트폴리오 목록 -->
+    </div>
+  </div>    
+</div>
+<!-- /포트폴리오 목록 -->
+
 
  <!-- 연락처 ------------------------------>
   <div class="container-fluid bg-5 text-center">
-    <h3 class="margin" id="contact" >연락처</h3>
-    <p>카톡ID : abcd1234</p>
-    <p>E-Mail : dvvda456@gmail.com</p>
+    <h3 class="margin" id="contact" >Contact</h3>
+    <p>Phone : 010-6788-3469</p>
+    <p>E-Mail : yui332@naver.com</p>
   </div>
   <!-- 연락처 -->
    
